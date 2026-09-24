@@ -1,0 +1,17 @@
+---
+title: "My First Repo"
+format:
+  html:
+    self-contained: true
+---
+
+## First graph
+
+```{r}
+library(tidyverse)
+
+storms |>
+  filter(year == 2000) |>
+  ggplot(aes(x = wind, y = pressure)) +
+  geom_point()
+```
